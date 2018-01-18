@@ -1,5 +1,8 @@
 import React, {Component} from 'react';
 import Button from './components/Button';
+import Text from './components/Text';
+import Notification from './components/Notification';
+import Input from './components/Input';
 
 function handleButtonClick() {
 	alert('button clicked');
@@ -29,7 +32,7 @@ class App extends Component {
 						heading (possible values: true / false - default)
 						size (possible values: small / medium - default / large)
 				*/}
-
+                <Text heading="true" size="small">Label</Text>
 
 
 				{/*
@@ -39,7 +42,9 @@ class App extends Component {
 					Props:
 						type (possible values: success / danger / info - default)
 				*/}
-
+                <Notification type="success">success</Notification>
+                <Notification type="danger">danger</Notification>
+                <Notification>info</Notification>
 
 
 				{/*
@@ -56,7 +61,7 @@ class App extends Component {
 						error (string)
 						onInputChange (function)
 				*/}
-
+                <Input/>
 
 				{/*
 					Component:
